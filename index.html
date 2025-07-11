@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- Primary Meta Tags -->
+    <title>Jeyakumar K - Full Stack Engineer | Flutter & AI Expert</title>
+    <meta name="title" content="Jeyakumar K - Full Stack Engineer | Flutter & AI Expert">
+    <meta name="description" content="Full Stack Engineer with 8+ years of experience in Flutter, FastAPI, and AI-powered development. Expert in mobile apps, backend systems, and cloud solutions.">
+    <meta name="keywords" content="Jeyakumar K, Full Stack Engineer, Flutter Developer, FastAPI Developer, Mobile App Development, AI Development, Python Developer, Cloud Architecture, Backend Developer, Bengaluru Developer, Boss Wallah, EdSmart">
+    <meta name="author" content="Jeyakumar K">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jeyakumar K - Full Stack Engineer | Flutter & AI Expert">
+    <meta property="og:description" content="Full Stack Engineer with 8+ years of experience in Flutter, FastAPI, and AI-powered development. Expert in mobile apps, backend systems, and cloud solutions.">
+    <meta property="og:image" content="https://blog.jaitechie.in/profile.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Jeyakumar K - Full Stack Engineer | Flutter & AI Expert">
+    <meta property="twitter:description" content="Full Stack Engineer with 8+ years of experience in Flutter, FastAPI, and AI-powered development. Expert in mobile apps, backend systems, and cloud solutions.">
+    <meta property="twitter:image" content="https://blog.jaitechie.in/profile.jpg">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#1a1a1a">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jeyakumar K",
+      "jobTitle": "Full Stack Engineer",
+      "url": "https://blog.jaitechie.in",
+      "sameAs": [
+        "https://www.linkedin.com/in/jeyakumar-k-678729146",
+        "https://stackoverflow.com/users/10688995/jai-techie",
+        "https://medium.com/@jaitechie"
+      ],
+      "knowsAbout": [
+        "Flutter Development",
+        "FastAPI",
+        "AI-Powered Development",
+        "Cloud Architecture",
+        "Mobile App Development",
+        "Backend Development"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Kumaraguru College of Technology"
+      },
+      "workExample": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Boss Wallah",
+          "applicationCategory": "Business",
+          "operatingSystem": "Android, iOS",
+          "downloadUrl": "https://play.google.com/store/apps/details?id=com.wealthdoctor"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Edsmart School Connect",
+          "applicationCategory": "Education",
+          "operatingSystem": "Android, iOS"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'code-black': '#1a1a1a',
+                        'code-gray': '#282828',
+                        'terminal-green': '#98c379'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        
+        body {
+            font-family: 'Fira Code', monospace;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            width: 100%;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 100%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                padding-left: 4rem;
+                padding-right: 4rem;
+                max-width: 1280px;
+            }
+        }
+
+        /* Fix for code blocks on mobile */
+        .code-block {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        /* Fix for grid layouts on mobile */
+        .grid {
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+        }
+
+        /* Ensure images don't cause overflow */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .typing-effect {
+            border-right: 2px solid #ffffff;
+            animation: typing 3s steps(30, end), blink 1s step-end infinite;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: none;
+        }
+
+        .fade-in-up.visible {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .terminal-effect {
+            position: relative;
+            padding: 1rem;
+            background: #282828;
+            border: 1px solid #404040;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .terminal-effect:hover {
+            border-color: #98c379;
+            box-shadow: 0 0 20px rgba(152, 195, 121, 0.1);
+        }
+
+        .code-block {
+            position: relative;
+            background: #282828;
+            border: 1px solid #404040;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .code-block:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border-color: #98c379;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink {
+            50% { border-color: transparent }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Floating Mail Button Styles */
+        .floating-mail {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: #98c379;
+            color: #1a1a1a;
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 12px rgba(152, 195, 121, 0.2);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .floating-mail:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(152, 195, 121, 0.3);
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: rotate(0deg); }
+            20% { transform: rotate(-10deg); }
+            40% { transform: rotate(10deg); }
+            60% { transform: rotate(-5deg); }
+            80% { transform: rotate(5deg); }
+        }
+
+        .shake-animation {
+            animation: shake 1s ease infinite;
+            animation-delay: 2s;
+        }
+
+        .line-number::before {
+            content: attr(data-line);
+            color: #666;
+            margin-right: 1rem;
+            user-select: none;
+        }
+
+        .comment { color: #98c379; }
+        .keyword { color: #c678dd; }
+        .string { color: #98c379; }
+        .function { color: #61afef; }
+
+        /* Blog cards and experience sections mobile fixes */
+        @media (max-width: 768px) {
+            .blog-card {
+                flex-direction: column;
+            }
+            
+            .blog-card-image {
+                width: 100%;
+                height: 200px;
+            }
+            
+            .blog-card-content {
+                width: 100%;
+            }
+            
+            .experience-content {
+                flex-direction: column;
+            }
+            
+            .experience-details {
+                width: 100%;
+            }
+            
+            /* Adjust text sizes for better mobile reading */
+            .text-3xl {
+                font-size: 1.5rem;
+            }
+            
+            .text-xl {
+                font-size: 1.25rem;
+            }
+            
+            /* Fix padding for mobile */
+            .p-6 {
+                padding: 1rem;
+            }
+            
+            .p-8 {
+                padding: 1.5rem;
+            }
+            
+            /* Adjust spacing */
+            .space-y-6 > * + * {
+                margin-top: 1rem;
+            }
+            
+            .gap-6 {
+                gap: 1rem;
+            }
+        }
+
+        /* Ensure all flex containers don't overflow */
+        .flex {
+            min-width: 0;
+        }
+
+        /* Fix for long words breaking layout */
+        .break-words {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+
+        /* Mobile Menu Styles */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(26, 26, 26, 0.98);
+            padding: 1rem;
+            transition: all 0.3s ease;
+            z-index: 40;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu-items {
+            width: 100%;
+            text-align: center;
+        }
+
+        .mobile-menu-items a {
+            display: block;
+            padding: 1rem;
+            font-size: 1.25rem;
+            color: #98c379;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu-items a:hover {
+            color: white;
+            background: rgba(152, 195, 121, 0.1);
+        }
+
+        /* Hamburger Button */
+        .hamburger {
+            width: 24px;
+            height: 24px;
+            position: relative;
+            cursor: pointer;
+            display: none;
+            z-index: 50;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+        }
+
+        .hamburger span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #98c379;
+            position: absolute;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger span:first-child {
+            top: 2px;
+        }
+
+        .hamburger span:nth-child(2) {
+            top: 11px;
+        }
+
+        .hamburger span:last-child {
+            bottom: 2px;
+        }
+
+        .hamburger.active span:first-child {
+            transform: rotate(45deg);
+            top: 11px;
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:last-child {
+            transform: rotate(-45deg);
+            bottom: 11px;
+        }
+
+        /* Menu Backdrop */
+        .menu-backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 30;
+        }
+
+        .menu-backdrop.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Prevent body scroll when menu is open */
+        body.menu-open {
+            overflow: hidden;
+        }
+
+        /* Social Media Icon Colors */
+        .social-icon {
+            transition: all 0.3s ease;
+            font-size: 1.5rem;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-2px);
+        }
+
+        .social-icon.email {
+            color: #EA4335;
+        }
+
+        .social-icon.linkedin {
+            color: #0A66C2;
+        }
+
+        .social-icon.stackoverflow {
+            color: #F48024;
+        }
+
+        .social-icon.medium {
+            color: #00AB6C;
+        }
+
+        .social-icon.email:hover {
+            color: #FF5A5A;
+            box-shadow: 0 4px 12px rgba(234, 67, 53, 0.2);
+        }
+
+        .social-icon.linkedin:hover {
+            color: #0077E5;
+            box-shadow: 0 4px 12px rgba(10, 102, 194, 0.2);
+        }
+
+        .social-icon.stackoverflow:hover {
+            color: #FF9A3C;
+            box-shadow: 0 4px 12px rgba(244, 128, 36, 0.2);
+        }
+
+        .social-icon.medium:hover {
+            color: #00D488;
+            box-shadow: 0 4px 12px rgba(0, 171, 108, 0.2);
+        }
+
+        /* View All Button Styles */
+        .view-all-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background-color: transparent;
+            border: 2px solid #98c379;
+            color: #98c379;
+            border-radius: 0.5rem;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+        }
+
+        .view-all-btn:hover {
+            background-color: #98c379;
+            color: #1a1a1a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(152, 195, 121, 0.2);
+        }
+
+        .view-all-btn i {
+            transition: transform 0.3s ease;
+        }
+
+        .view-all-btn:hover i {
+            transform: translateX(4px);
+        }
+
+        /* Download Resume Button */
+        .download-resume {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background-color: #98c379;
+            color: #1a1a1a;
+            border-radius: 0.375rem;
+            font-weight: 500;
+            font-size: 0.875rem;
+            transition: all 0.3s ease;
+            margin: 0.5rem 0 1rem;
+        }
+
+        .download-resume:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(152, 195, 121, 0.3);
+            background-color: #a9d08e;
+        }
+
+        .download-resume i {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .download-resume {
+                width: 100%;
+                justify-content: center;
+                padding: 0.625rem 1rem;
+                font-size: 1rem;
+            }
+            
+            .download-resume i {
+                font-size: 1.125rem;
+            }
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Intersection Observer for fade-in animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            document.querySelectorAll('.fade-in-up').forEach((el) => {
+                observer.observe(el);
+            });
+
+            // Smooth scroll for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Mobile Menu Functionality
+            const hamburger = document.querySelector('.hamburger');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const menuBackdrop = document.querySelector('.menu-backdrop');
+            const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+
+            function toggleMenu() {
+                hamburger.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+                menuBackdrop.classList.toggle('active');
+                document.body.classList.toggle('menu-open');
+            }
+
+            hamburger.addEventListener('click', toggleMenu);
+            menuBackdrop.addEventListener('click', toggleMenu);
+
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    toggleMenu();
+                    const targetId = link.getAttribute('href');
+                    if (targetId.startsWith('#')) {
+                        setTimeout(() => {
+                            document.querySelector(targetId).scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body class="bg-code-black">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-code-gray border-b border-gray-700 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-xl font-bold text-terminal-green font-mono">> jk.dev</a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" class="text-gray-400 hover:text-white transition">/about</a>
+                    <a href="#skills" class="text-gray-400 hover:text-white transition">/skills</a>
+                    <a href="#experience" class="text-gray-400 hover:text-white transition">/experience</a>
+                    <a href="#projects" class="text-gray-400 hover:text-white transition">/projects</a>
+                    <a href="#education" class="text-gray-400 hover:text-white transition">/education</a>
+                    <a href="#certificates" class="text-gray-400 hover:text-white transition">/certificates</a>
+                    <a href="#blogs" class="text-gray-400 hover:text-white transition">/blogs</a>
+                </div>
+
+                <!-- Hamburger Button -->
+                <div class="hamburger md:hidden">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <div class="mobile-menu-items">
+                <a href="#about" class="text-gray-400 hover:text-white transition">/about</a>
+                <a href="#skills" class="text-gray-400 hover:text-white transition">/skills</a>
+                <a href="#experience" class="text-gray-400 hover:text-white transition">/experience</a>
+                <a href="#projects" class="text-gray-400 hover:text-white transition">/projects</a>
+                <a href="#education" class="text-gray-400 hover:text-white transition">/education</a>
+                <a href="#certificates" class="text-gray-400 hover:text-white transition">/certificates</a>
+                <a href="#blogs" class="text-gray-400 hover:text-white transition">/blogs</a>
+            </div>
+        </div>
+
+        <!-- Menu Backdrop -->
+        <div class="menu-backdrop"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="terminal-effect p-8 mb-8">
+                    <div class="pt-4">
+                        <p class="text-gray-400 mb-2">$ whoami</p>
+                        <h1 class="text-3xl md:text-4xl font-bold mb-4 typing-effect text-terminal-green">JEYAKUMAR K</h1>
+                        <p class="text-gray-300 mb-4">> Full Stack Engineer | Exploring AI Opportunities | Ex-Engineering Manager at Boss Wallah | Led Mobile App Development Team | Flutter & FastAPI Expertise</p>
+                        <p class="flex justify-left space-x-6 fade-in-up mb-4">
+                            <a href="mailto:mailtome.jey@gmail.com" target="_blank" class="social-icon email" title="Send email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jeyakumar-k-678729146" target="_blank" class="social-icon linkedin" title="Connect on LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://stackoverflow.com/users/10688995/jai-techie" target="_blank" class="social-icon stackoverflow" title="Follow on Stack Overflow">
+                                <i class="fab fa-stack-overflow"></i>
+                            </a>
+                            <a href="https://blog.jaitechie.in" target="_blank" class="social-icon medium" title="Read on Medium">
+                                <i class="fab fa-medium"></i>
+                            </a>
+                        </p>
+                        <p class="text-gray-400 mb-4">$ cat about.txt</p>
+                        <p class="text-gray-300 leading-relaxed whitespace-pre-line">Over 8+ years of experience building scalable mobile apps and backend systems using Flutter, FastAPI (Python), PHP (CodeIgniter), and Node.js (Express). Successfully architected and delivered a mobile platform scaled to 10M+ users from the ground up. <br>
+                            Expert in Flutter mobile development, backend microservices, clean architecture, App Store & Play Store releases, CI/CD pipelines, and cloud-native deployments. Skilled in integrating secure payment gateways (Razorpay, PhonePe, HDFC), Firebase, dynamic links, attribution tracking, Video call/Webinar, analytics platforms, and agile project management with Jira. <br> 
+                            Specializing in AI-assisted development, leveraging cutting-edge tools like Cursor, n8n workflows, Lovable, Stitch, MCP, GPT, and Claude to accelerate delivery, enhance code quality, and drive developer productivity. Proven leader in end-to-end product lifecycle management, from MVP to large-scale production.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-terminal-green">> Skills.map()</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="code-block p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-terminal-green">
+                        <i class="fas fa-mobile-alt mr-2"></i>
+                        Mobile Development
+                    </h3>
+                    <div class="space-y-2">
+                        <p class="text-gray-300 line-number" data-line="01">Flutter (Dart)</p>
+                        <p class="text-gray-300 line-number" data-line="02">Android (Java/Kotlin)</p>
+                        <p class="text-gray-300 line-number" data-line="03">Swift (iOS)</p>
+                    </div>
+                </div>
+
+                <div class="code-block p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-terminal-green">
+                        <i class="fas fa-server mr-2"></i>
+                        Backend & Microservices
+                    </h3>
+                    <div class="space-y-2">
+                        <p class="text-gray-300 line-number" data-line="01">Python (FastAPI, Kafka)</p>
+                        <p class="text-gray-300 line-number" data-line="02">PHP (CodeIgniter)</p>
+                        <p class="text-gray-300 line-number" data-line="03">Node.js (Express)</p>
+                    </div>
+                </div>
+
+                <div class="code-block p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-terminal-green">
+                        <i class="fas fa-robot mr-2"></i>
+                        AI Development Stack
+                    </h3>
+                    <div class="space-y-2">
+                        <p class="text-gray-300 line-number" data-line="01">Cursor, GitHub Copilot</p>
+                        <p class="text-gray-300 line-number" data-line="02">Firebase Studio, MCPs</p>
+                        <p class="text-gray-300 line-number" data-line="03">n8n, Lovable, Stitch</p>
+                        <p class="text-gray-300 line-number" data-line="04">openAI</p>
+                    </div>
+                </div>
+
+                <div class="code-block p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-terminal-green">
+                        <i class="fas fa-cloud mr-2"></i>
+                        Cloud & DevOps
+                    </h3>
+                    <div class="space-y-2">
+                        <p class="text-gray-300 line-number" data-line="01">Git, Docker</p>
+                        <p class="text-gray-300 line-number" data-line="02">Google Cloud (GCS, Cloud Run)</p>
+                        <p class="text-gray-300 line-number" data-line="03">AWS, CI/CD Pipelines</p>
+                    </div>
+                </div>
+
+                <div class="code-block p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-terminal-green">
+                        <i class="fas fa-credit-card mr-2"></i>
+                        Payments & Integrations
+                    </h3>
+                    <div class="space-y-2">
+                        <p class="text-gray-300 line-number" data-line="01">Razorpay, PhonePe</p>
+                        <p class="text-gray-300 line-number" data-line="02">HDFC, UPI</p>
+                    </div>
+                </div>
+
+                <div class="code-block p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-terminal-green">
+                        <i class="fas fa-database mr-2"></i>
+                        Databases
+                    </h3>
+                    <div class="space-y-2">
+                        <p class="text-gray-300 line-number" data-line="01">MySQL, MongoDB, Redis</p>
+                        <p class="text-gray-300 line-number" data-line="02">ClickHouse, BigQuery</p>
+                        <p class="text-gray-300 line-number" data-line="03">Elasticsearch, Cassandra</p>
+                    </div>
+                </div>
+
+                <div class="code-block p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-terminal-green">
+                        <i class="fas fa-chart-line mr-2"></i>
+                        Analytics & Engagement
+                    </h3>
+                    <div class="space-y-2">
+                        <p class="text-gray-300 line-number" data-line="01">Google Analytics</p>
+                        <p class="text-gray-300 line-number" data-line="02">JotURL(DDL)</p>
+                        <p class="text-gray-300 line-number" data-line="03">100ms-Video Call & Webinars</p>
+                        <p class="text-gray-300 line-number" data-line="04">MoEngage, Adjust</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-code-gray border-y border-gray-700">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-terminal-green">> Career.timeline()</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-12">
+                    <div class="code-block p-6 fade-in-up">
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <div class="md:w-1/3">
+                                <h3 class="text-xl font-bold text-terminal-green">Engineering Manager</h3>
+                                <p class="text-gray-400">Bosswallah Technologies</p>
+                                <p class="text-gray-500">Nov 2019 – Jun 2025</p>
+                                <p class="text-gray-500 text-sm">5 yrs 8 mos</p>
+                                <p class="text-gray-400 text-sm">Bengaluru</p>
+                            </div>
+                            <div class="md:w-2/3">
+                                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                    <li>Progressed from Software Engineer to Engineering Manager, leading a cross-functional team of 4 mobile developers (Flutter) and 3 backend engineers (FastAPI & PHP)</li>
+                                    <li>Architected and delivered cross-platform apps using Flutter and FastAPI microservices deployed on GCP Cloud Run</li>
+                                    <li>Leveraged AI development tools (Cursor & MCP) to optimize development speed, automate boilerplate, and enforce clean architecture principles</li>
+                                    <li>Integrated secure payment gateways (Razorpay, PhonePe, HDFC)</li>
+                                    <li>Built CI/CD pipelines, automating mobile QA builds</li>
+                                    <li>Led App Store & Play Store publishing processes, including security hardening, crash analytics, monitoring, and release automation</li>
+                                    <li>Integrated Firebase, Google Analytics, MoEngage, Adjust, and Dynamic Links for advanced engagement, attribution tracking, and user growth</li>
+                                    <li>Drove agile sprint planning, backlog management, and cross-team collaboration using Jira</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="code-block p-6 fade-in-up">
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <div class="md:w-1/3">
+                                <h3 class="text-xl font-bold text-terminal-green">Backend Developer</h3>
+                                <p class="text-gray-400">MN Service Providers</p>
+                                <p class="text-gray-500">Aug 2018 – Nov 2019</p>
+                                <p class="text-gray-500 text-sm">1 yr 3 mos</p>
+                                <p class="text-gray-400 text-sm">Bengaluru</p>
+                            </div>
+                            <div class="md:w-2/3">
+                                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                    <li>Worked as a Backend Developer as part of a small backend team of 4 members, delivering enterprise-scale backend systems for internal business operations</li>
+                                    <li>Delivered complex backend platforms using PHP (CodeIgniter) and MySQL for HR, Finance, Vendor Management, Procurement, and Reporting</li>
+                                    <li>Developed RESTful APIs, complex data models, and custom admin dashboards supporting multiple business units</li>
+                                    <li>Enhanced system security, optimized database performance, and improved scalability for production environments</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="code-block p-6 fade-in-up">
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <div class="md:w-1/3">
+                                <h3 class="text-xl font-bold text-terminal-green">Android Developer</h3>
+                                <p class="text-gray-400">Gateway Software Solutions</p>
+                                <p class="text-gray-500">Apr 2017 – May 2018</p>
+                                <p class="text-gray-500 text-sm">1 yr 2 mos</p>
+                                <p class="text-gray-400 text-sm">Coimbatore</p>
+                            </div>
+                            <div class="md:w-2/3">
+                                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                    <li>Built native Android applications handling offline-first models for ERP, billing, sales tracking, and chit-fund collections</li>
+                                    <li>Integrated payment collection workflows with SMS, Bluetooth receipt printing, and agent tracking using GPS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="code-block p-6 fade-in-up">
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <div class="md:w-1/3">
+                                <h3 class="text-xl font-bold text-terminal-green">Android Development Intern</h3>
+                                <p class="text-gray-400">Poras Technologies</p>
+                                <p class="text-gray-500">Jan 2017 – Apr 2017</p>
+                                <p class="text-gray-500 text-sm">4 mos</p>
+                                <p class="text-gray-400 text-sm">Coimbatore</p>
+                            </div>
+                            <div class="md:w-2/3">
+                                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                    <li>Built initial Android prototypes, focused on clean UI/UX, API consumption, debugging, and native SDK integrations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-terminal-green">> Projects.showcase()</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- Boss Wallah -->
+                <div class="code-block p-6 fade-in-up">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold text-terminal-green">
+                            <a href="https://play.google.com/store/apps/details?id=com.wealthdoctor&hl=en_IN&pli=1" target="_blank" class="hover:text-terminal-green transition">
+                                Boss Wallah <i class="fas fa-external-link-alt text-sm"></i>
+                            </a>
+                        </h3>
+                        <div class="flex gap-2">
+                            <span class="px-2 py-1 bg-code-gray text-terminal-green border border-terminal-green/30 rounded-full text-xs">10M+ Users</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">One-stop platform for aspiring entrepreneurs looking to start, grow, and scale their businesses. Offers courses and expert connections to users.</p>
+                </div>
+
+                <!-- Edsmart -->
+                <div class="code-block p-6 fade-in-up">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold text-terminal-green">
+                            <a href="https://play.google.com/store/apps/details?id=com.edsmart.schoolconnect&hl=en_IN" target="_blank" class="hover:text-terminal-green transition">
+                                Edsmart School Connect <i class="fas fa-external-link-alt text-sm"></i>
+                            </a>
+                        </h3>
+                        <div class="flex gap-2">
+                            <span class="px-2 py-1 bg-code-gray text-terminal-green border border-terminal-green/30 rounded-full text-xs">1k+ Users</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">Enables schools to assess, track, and report children's progress, with access to curriculum and resources. Connects schools to teachers and children.</p>
+                </div>
+
+                <!-- Customer Data Queue -->
+                <div class="code-block p-6 fade-in-up">
+                    <h3 class="text-xl font-bold mb-4 text-terminal-green">Customer Data Queue</h3>
+                    <p class="text-gray-300 mb-4">Developed customer priority queue system powered by MoEngage AI models, Cassandra NoSQL DB, and Python APIs for scalable data ingestion.</p>
+                </div>
+
+                <!-- Search Engine -->
+                <div class="code-block p-6 fade-in-up">
+                    <h3 class="text-xl font-bold mb-4 text-terminal-green">Search Engine</h3>
+                    <p class="text-gray-300 mb-4">Implemented a fast, indexed search API layer for financial learning platforms with scalable search across users, courses, and experts.</p>
+                </div>
+
+                <!-- Purtainet ERP -->
+                <div class="code-block p-6 fade-in-up">
+                    <h3 class="text-xl font-bold mb-4 text-terminal-green">Purtainet ERP Platform</h3>
+                    <p class="text-gray-300 mb-4">Built comprehensive back-office ERP covering employee management, HRMS, finance, procurement, document management, and Tally integration.</p>
+                </div>
+
+                <!-- Offline Native Apps -->
+                <div class="code-block p-6 fade-in-up">
+                    <h3 class="text-xl font-bold mb-4 text-terminal-green">Offline Native Apps</h3>
+                    <p class="text-gray-300 mb-4">Developed multiple offline Android ERP apps for local businesses with product ordering, agent tracking, chit fund collections, and CRM features.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-code-gray border-y border-gray-700">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-terminal-green">> Education.details()</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="code-block p-6 fade-in-up">
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-white font-semibold">Master of Computer Applications (MCA)</p>
+                            <p class="text-gray-400">Kumaraguru College of Technology</p>
+                            <p class="text-gray-500">2017 - 74.3%</p>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold">Bachelor of Computer Applications (BCA)</p>
+                            <p class="text-gray-400">Kamban College of Arts & Science</p>
+                            <p class="text-gray-500">2015 - 67.4%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-terminal-green">> Certificates.showcase()</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="code-block p-6 fade-in-up">
+                    <h3 class="text-xl font-bold mb-4 text-terminal-green">CERTIFICATIONS & BADGES</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-white font-semibold">
+                                <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-dfea6daf-fb9f-4617-98db-cfca86e20955.pdf" target="_blank" class="hover:text-terminal-green transition">
+                                    Flutter BLoC (Udemy Certified) <i class="fas fa-external-link-alt text-sm"></i>
+                                </a>
+                            </p>
+                            <p class="text-white font-semibold">
+                                <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-b1c128c9-1209-4871-95dc-d1f241aec71d.pdf" target="_blank" class="hover:text-terminal-green transition">
+                                    PHP (Udemy Certified) <i class="fas fa-external-link-alt text-sm"></i>
+                                </a>
+                            </p>
+                            <p class="text-white font-semibold">LinkedIn Skill Badges</p>
+                            <p class="text-gray-400">Android, PHP, REST API</p>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold">StackOverflow</p>
+                            <p class="text-gray-400">Reputation: 1,977</p>
+                            <p class="text-gray-400">
+                                <i class="fas fa-medal text-yellow-400"></i> Gold: 5 | 
+                                <i class="fas fa-medal text-gray-300"></i> Silver: 20 | 
+                                <i class="fas fa-medal text-amber-600"></i> Bronze: 39
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold">Medium</p>
+                            <p class="text-gray-400">Stories Published: 50+</p>
+                            <p class="text-gray-400">Avg. Views: 2.5k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Blogs Section -->
+    <section id="blogs" class="py-16 bg-code-gray border-y border-gray-700">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-terminal-green break-words">> Blogs.top(5)</h2>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="code-block p-6 fade-in-up">
+                    <div class="grid grid-cols-1 gap-8">
+                        <!-- FrameFox Blog -->
+                        <a href="https://medium.com/@jaitechie05/framefox-the-full-stack-devs-lightweight-playground-for-building-internal-tools-e8e55399c972" target="_blank" class="block group blog-card">
+                            <div class="flex flex-col md:flex-row gap-6">
+                                <div class="blog-card-image md:w-1/3">
+                                    <div class="relative h-48 md:h-full rounded-lg overflow-hidden border border-gray-700">
+                                        <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*0gjr607Hhpwq9ncR7zQL6w.png" 
+                                             alt="FrameFox Blog" 
+                                             class="w-full h-full object-contain bg-code-black"
+                                             loading="lazy">
+                                        <div class="absolute inset-0 bg-black bg-opacity-40 transition-opacity group-hover:bg-opacity-20"></div>
+                                    </div>
+                                </div>
+                                <div class="blog-card-content md:w-2/3">
+                                    <div class="flex items-center gap-4 text-sm text-gray-400 mb-2">
+                                        <span><i class="far fa-clock"></i> 8 min read</span>
+                                    </div>
+                                    <h3 class="text-xl font-semibold text-white group-hover:text-terminal-green transition flex items-center gap-2">
+                                        FrameFox: The Full Stack Dev's Lightweight Playground
+                                        <i class="fas fa-arrow-right text-sm opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all"></i>
+                                    </h3>
+                                    <p class="text-gray-400 mt-2">A comprehensive guide to building internal tools with FrameFox. Learn how to create powerful admin panels, dashboards, and CRUD interfaces with minimal setup and maximum flexibility.</p>
+                                    <div class="flex gap-2 mt-4">
+                                        <span class="px-2 py-1 bg-code-black text-xs text-terminal-green border border-terminal-green/30 rounded-full">Internal Tools</span>
+                                        <span class="px-2 py-1 bg-code-black text-xs text-terminal-green border border-terminal-green/30 rounded-full">Development</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Cursor Memory Blog -->
+                        <a href="https://medium.com/@jaitechie05/cursor-now-with-memory-and-mcp-one-click-install-update-long-wait-0286081eff3a" target="_blank" class="block group blog-card">
+                            <div class="flex flex-col md:flex-row gap-6">
+                                <div class="blog-card-image md:w-1/3">
+                                    <div class="relative h-48 md:h-full rounded-lg overflow-hidden border border-gray-700">
+                                        <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*gLimaQtnrUF2_etYSUKsjQ.png" 
+                                             alt="Cursor Memory Blog" 
+                                             class="w-full h-full object-contain bg-code-black"
+                                             loading="lazy">
+                                        <div class="absolute inset-0 bg-black bg-opacity-40 transition-opacity group-hover:bg-opacity-20"></div>
+                                    </div>
+                                </div>
+                                <div class="blog-card-content md:w-2/3">
+                                    <div class="flex items-center gap-4 text-sm text-gray-400 mb-2">
+                                        <span><i class="far fa-clock"></i> 6 min read</span>
+                                    </div>
+                                    <h3 class="text-xl font-semibold text-white group-hover:text-terminal-green transition flex items-center gap-2">
+                                        Cursor: Now with Memory and MCP
+                                        <i class="fas fa-arrow-right text-sm opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all"></i>
+                                    </h3>
+                                    <p class="text-gray-400 mt-2">Explore the latest features in Cursor IDE including memory persistence and MCP integration. Learn how these new capabilities can significantly boost your development workflow.</p>
+                                    <div class="flex gap-2 mt-4">
+                                        <span class="px-2 py-1 bg-code-black text-xs text-terminal-green border border-terminal-green/30 rounded-full">Cursor</span>
+                                        <span class="px-2 py-1 bg-code-black text-xs text-terminal-green border border-terminal-green/30 rounded-full">AI</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- BugBot Blog -->
+                        <a href="https://medium.com/@jaitechie05/bugbot-how-cursors-ai-code-reviewer-catches-bugs-before-you-merge-8e51fd48e952" target="_blank" class="block group blog-card">
+                            <div class="flex flex-col md:flex-row gap-6">
+                                <div class="blog-card-image md:w-1/3">
+                                    <div class="relative h-48 md:h-full rounded-lg overflow-hidden border border-gray-700">
+                                        <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*iUim77ZUMCULpUzX_809Wg.png" 
+                                             alt="BugBot Blog" 
+                                             class="w-full h-full object-contain bg-code-black"
+                                             loading="lazy">
+                                        <div class="absolute inset-0 bg-black bg-opacity-40 transition-opacity group-hover:bg-opacity-20"></div>
+                                    </div>
+                                </div>
+                                <div class="blog-card-content md:w-2/3">
+                                    <div class="flex items-center gap-4 text-sm text-gray-400 mb-2">
+                                        <span><i class="far fa-clock"></i> 7 min read</span>
+                                    </div>
+                                    <h3 class="text-xl font-semibold text-white group-hover:text-terminal-green transition flex items-center gap-2">
+                                        BugBot: AI-Powered Code Review in Cursor
+                                        <i class="fas fa-arrow-right text-sm opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all"></i>
+                                    </h3>
+                                    <p class="text-gray-400 mt-2">Deep dive into Cursor's AI code review capabilities. Discover how BugBot helps catch potential issues and improves code quality before merging.</p>
+                                    <div class="flex gap-2 mt-4">
+                                        <span class="px-2 py-1 bg-code-black text-xs text-terminal-green border border-terminal-green/30 rounded-full">Code Review</span>
+                                        <span class="px-2 py-1 bg-code-black text-xs text-terminal-green border border-terminal-green/30 rounded-full">AI</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Google AI Blog -->
+                        <a href="https://blog.jaitechie.in/google-is-using-youtube-videos-to-train-its-ai-what-every-creator-should-know-8f0ad184cf12" target="_blank" class="block group blog-card">
+                            <div class="flex flex-col md:flex-row gap-6">
+                                <div class="blog-card-image md:w-1/3">
+                                    <div class="relative h-48 md:h-full rounded-lg overflow-hidden border border-gray-700">
+                                        <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*RkgAwJ55rwA0CKRm5XlOjQ.png" 
+                                             alt="Google AI Blog" 
+                                             class="w-full h-full object-contain bg-code-black"
+                                             loading="lazy">
+                                        <div class="absolute inset-0 bg-black bg-opacity-40 transition-opacity group-hover:bg-opacity-20"></div>
+                                    </div>
+                                </div>
+                                <div class="blog-card-content md:w-2/3">
+                                    <div class="flex items-center gap-4 text-sm text-gray-400 mb-2">
+                                        <span><i class="far fa-clock"></i> 5 min read</span>
+                                    </div>
+                                    <h3 class="text-xl font-semibold text-white group-hover:text-terminal-green transition flex items-center gap-2">
+                                        Google's AI Training with YouTube Videos
+                                        <i class="fas fa-arrow-right text-sm opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all"></i>
+                                    </h3>
+                                    <p class="text-gray-400 mt-2">An in-depth look at how Google is leveraging YouTube content for AI training. Essential insights for content creators in the age of AI.</p>
+                                    <div class="flex gap-2 mt-4">
+                                        <span class="px-2 py-1 bg-code-black text-xs text-terminal-green border border-terminal-green/30 rounded-full">AI</span>
+                                        <span class="px-2 py-1 bg-code-black text-xs text-terminal-green border border-terminal-green/30 rounded-full">YouTube</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Multi-root Workspaces Blog -->
+                        <a href="https://medium.com/@jaitechie05/cursor-ai-understanding-multi-root-workspaces-for-enhanced-productivity-a3100d4bbb85" target="_blank" class="block group blog-card">
+                            <div class="flex flex-col md:flex-row gap-6">
+                                <div class="blog-card-image md:w-1/3">
+                                    <div class="relative h-48 md:h-full rounded-lg overflow-hidden border border-gray-700">
+                                        <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*N4yzihr38X_it2pRod2GYg.png" 
+                                             alt="Multi-root Workspaces Blog" 
+                                             class="w-full h-full object-contain bg-code-black"
+                                             loading="lazy">
+                                        <div class="absolute inset-0 bg-black bg-opacity-40 transition-opacity group-hover:bg-opacity-20"></div>
+                                    </div>
+                                </div>
+                                <div class="blog-card-content md:w-2/3">
+                                    <div class="flex items-center gap-4 text-sm text-gray-400 mb-2">
+                                        <span><i class="far fa-clock"></i> 6 min read</span>
+                                    </div>
+                                    <h3 class="text-xl font-semibold text-white group-hover:text-terminal-green transition flex items-center gap-2">
+                                        Multi-root Workspaces in Cursor AI
+                                        <i class="fas fa-arrow-right text-sm opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all"></i>
+                                    </h3>
+                                    <p class="text-gray-400 mt-2">A comprehensive guide to leveraging multi-root workspaces in Cursor AI for enhanced development productivity and better project organization.</p>
+                                    <div class="flex gap-2 mt-4">
+                                        <span class="px-2 py-1 bg-code-black text-xs text-terminal-green border border-terminal-green/30 rounded-full">Cursor</span>
+                                        <span class="px-2 py-1 bg-code-black text-xs text-terminal-green border border-terminal-green/30 rounded-full">Productivity</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- View All Blogs Button -->
+                <div class="text-center">
+                    <a href="https://medium.com/@jaitechie05" target="_blank" class="view-all-btn">
+                        View All Posts <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-code-black py-8 border-t border-gray-700">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="mailto:mailtome.jey@gmail.com" target="_blank" class="social-icon email" title="Send email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jeyakumar-k-678729146" target="_blank" class="social-icon linkedin" title="Connect on LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://stackoverflow.com/users/10688995/jai-techie" target="_blank" class="social-icon stackoverflow" title="Follow on Stack Overflow">
+                    <i class="fab fa-stack-overflow"></i>
+                </a>
+                <a href="https://blog.jaitechie.in" target="_blank" class="social-icon medium" title="Read on Medium">
+                    <i class="fab fa-medium"></i>
+                </a>
+            </div>
+            <p class="text-gray-500">© 2025 Jeyakumar K. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Mail Button -->
+    <a href="mailto:mailtome.jey@gmail.com" target="_blank" class="floating-mail shake-animation" title="Send me an email">
+        <i class="fas fa-envelope"></i>
+    </a>
+
+</body>
+</html> 
