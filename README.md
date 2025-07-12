@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with HTML, Tailwind CSS, and JavaScript. The website features a terminal-inspired design theme with smooth animations and a professional layout.
 
-![Portfolio Preview](https://miro.medium.com/v2/resize:fill:96:96/1*4lt7rbLDZ69RDIIOuqvOUw@2x.jpeg)
+![Portfolio Preview](./assets/images/profile.jpeg)
 
 ## 🌟 Features
 
