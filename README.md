@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with HTML, Tailwind CSS, and JavaScript. The website features a terminal-inspired design theme with smooth animations and a professional layout.
 
-![Portfolio Preview](./assets/images/profile.jpeg)
+![Portfolio Preview](./assets/images/profile.jpg)
 
 ## 🌟 Features
 
