@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with HTML, Tailwind CSS, and JavaScript. The website features a terminal-inspired design theme with smooth animations and a professional layout.
 
-![Portfolio Preview](https://blog.jaitechie.in/profile.jpg)
+![Portfolio Preview](https://miro.medium.com/v2/resize:fill:96:96/1*4lt7rbLDZ69RDIIOuqvOUw@2x.jpeg)
 
 ## 🌟 Features
 
@@ -33,24 +33,6 @@ A modern, responsive portfolio website built with HTML, Tailwind CSS, and JavaSc
 6. **Certificates**: Professional certifications and badges
 7. **Blogs**: Recent technical articles and publications
 
-## 🚀 Quick Start
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/Jey-Portfolio.git
-```
-
-2. Open `index.html` in your browser to view the website
-
-## 💻 Development
-
-To modify the website:
-
-1. Install a live server extension in your code editor (recommended)
-2. Make changes to the HTML/CSS in `index.html`
-3. The site uses Tailwind CSS via CDN, so no build step is required
-4. Test responsiveness across different device sizes
-
 ## 📱 Mobile Support
 
 The website is fully responsive and includes:
@@ -73,14 +55,6 @@ The website is fully responsive and includes:
 - CDN delivery of assets
 - Optimized font loading
 - Minified CSS/JS resources
-
-## 🤝 Contributing
-
-Feel free to fork this repository and submit pull requests for any improvements.
-
-## 📄 License
-
-This project is open source and available under the MIT License.
 
 ## 📧 Contact
 
